@@ -1,4 +1,5 @@
 node {
+   checkout scm
    stage 'Stage 1 : sanity check'
    echo 'OK pipelines work in the test instance'
    stage 'Stage 2 : steps check'
