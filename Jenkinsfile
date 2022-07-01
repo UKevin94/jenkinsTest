@@ -3,7 +3,7 @@ node {
    echo 'OK pipelines work in the test instance'
    stage 'Stage 2 : steps check'
        def workflow_id = runSquashWorkflow(
-           workflowPathName:'peac.yaml',
+           workflowPathName:'./peac.yaml',
            workflowTimeout: '20S',
            serverName:'defaultServer'
        )
